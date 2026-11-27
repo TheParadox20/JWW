@@ -14,7 +14,7 @@ export function initAnimations() {
       .from('.portrait-photo', { autoAlpha: 0, y: 24, duration: 0.9 }, 0.15)
       .from('.hope-poster', { autoAlpha: 0, y: 16, duration: 0.7 }, 0.45)
 
-    gsap.utils.toArray('.about-grid > *, .focus-heading > *, .closing-top, .closing h2, .closing-bottom').forEach((element) => {
+    gsap.utils.toArray('.about-grid > *, .focus-heading > *').forEach((element) => {
       gsap.from(element, {
         autoAlpha: 0,
         y: 24,
